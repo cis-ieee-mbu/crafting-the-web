@@ -125,10 +125,10 @@ Document every section with exact layout details.
 ```mermaid
 flowchart TD
     nav["NAVBAR"]
-    stats["STATS BAR\nTotal: 12 / Active: 8 / Done: 4"]
-    form["TASK FORM\nTitle, Category, Priority, Add Task"]
-    filter["FILTER BAR\nAll / Work / Personal / Urgent"]
-    list["TASK LIST\nBuy groceries - Personal - Low\nFinish report - Work - High\nSubmit homework - School - Med"]
+    stats["STATS BAR<br/>Total: 12 / Active: 8 / Done: 4"]
+    form["TASK FORM<br/>Title, Category, Priority, Add Task"]
+    filter["FILTER BAR<br/>All / Work / Personal / Urgent"]
+    list["TASK LIST<br/>Buy groceries - Personal - Low<br/>Finish report - Work - High<br/>Submit homework - School - Med"]
 
     nav --> stats --> form --> filter --> list
 
@@ -149,11 +149,11 @@ Define what draws the user's eye first, second, and third on each page.
 
 ```mermaid
 flowchart TD
-    A["1. Hero headline\nlargest text, highest contrast"]
-    B["2. CTA buttons\nbright color, prominent position"]
-    C["3. Feature cards\nsupporting information"]
-    D["4. Navigation\nalways accessible but not dominant"]
-    E["5. Footer\nlowest priority, reference only"]
+    A["1. Hero headline<br/>largest text, highest contrast"]
+    B["2. CTA buttons<br/>bright color, prominent position"]
+    C["3. Feature cards<br/>supporting information"]
+    D["4. Navigation<br/>always accessible but not dominant"]
+    E["5. Footer<br/>lowest priority, reference only"]
 
     A --> B --> C --> D --> E
 ```
@@ -162,10 +162,10 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A["1. Task list\nthe core feature, most screen space"]
-    B["2. Add task form\nprimary action"]
-    C["3. Stats bar\ncontextual overview"]
-    D["4. Filter bar\nsecondary controls"]
+    A["1. Task list<br/>the core feature, most screen space"]
+    B["2. Add task form<br/>primary action"]
+    C["3. Stats bar<br/>contextual overview"]
+    D["4. Filter bar<br/>secondary controls"]
 
     A --> B --> C --> D
 ```

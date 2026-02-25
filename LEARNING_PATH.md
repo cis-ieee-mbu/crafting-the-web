@@ -19,16 +19,16 @@ Follow this order from top to bottom. Each phase depends on the output of the pr
 
 ```mermaid
 flowchart TD
-    P1["Phase 1: Overview\nUnderstand the full picture"]
-    P2["Phase 2: Ideation\nDefine WHAT you are building"]
-    P3["Phase 3: Research\nIdentify WHAT you need"]
-    P4["Phase 4: Architecture\nDesign HOW it is structured"]
-    P5["Phase 5: UI Design\nPlan HOW it looks"]
-    P6["Phase 6: Frontend Build\nBuild the interface"]
-    P7["Phase 7: AI Workflow\nOptimize your speed"]
-    P8["Phase 8: Firebase Backend\nConnect to real data"]
-    P9["Phase 9: Deployment\nShip to production"]
-    P10["Phase 10: Final Output\nVerify completeness"]
+    P1["Phase 1: Overview<br/>Understand the full picture"]
+    P2["Phase 2: Ideation<br/>Define WHAT you are building"]
+    P3["Phase 3: Research<br/>Identify WHAT you need"]
+    P4["Phase 4: Architecture<br/>Design HOW it is structured"]
+    P5["Phase 5: UI Design<br/>Plan HOW it looks"]
+    P6["Phase 6: Frontend Build<br/>Build the interface"]
+    P7["Phase 7: AI Workflow<br/>Optimize your speed"]
+    P8["Phase 8: Firebase Backend<br/>Connect to real data"]
+    P9["Phase 9: Deployment<br/>Ship to production"]
+    P10["Phase 10: Final Output<br/>Verify completeness"]
 
     P1 --> P2 --> P3 --> P4 --> P5 --> P6 --> P7 --> P8 --> P9 --> P10
 ```

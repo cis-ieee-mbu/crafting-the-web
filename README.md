@@ -86,14 +86,14 @@ flowchart TB
     end
 
     subgraph FIREBASE["FIREBASE - Google Cloud"]
-        Auth["Authentication\nEmail/Pass"]
-        Firestore["Cloud Firestore\nNoSQL Database"]
+        Auth["Authentication<br/>Email/Pass"]
+        Firestore["Cloud Firestore<br/>NoSQL Database"]
     end
 
     subgraph VERCEL["VERCEL - Deployment"]
         Build["Build Pipeline"]
         CDN["CDN / Edge Network"]
-        URL["Live URL\nyour-app.vercel.app"]
+        URL["Live URL<br/>your-app.vercel.app"]
     end
 
     Pages --> SDK
@@ -201,5 +201,3 @@ This workshop documentation is open source and available for educational use.
 **[⬆ Back to Top](#-crafting-the-web--ai-assisted-web-development-pipeline)**
 
 </div>
-# crafting-the-web
-# crafting-the-web

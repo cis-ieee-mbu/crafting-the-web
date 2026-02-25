@@ -243,9 +243,9 @@ git push origin feature/new-section
 ```mermaid
 flowchart LR
     A["Local Code"] -->|git push| B["GitHub Repo"]
-    B -->|webhook| C["Vercel\nBuild + Deploy"]
-    C --> D["Live URL\nyour-app.vercel.app"]
-    C --> E["Global CDN\nEdge Network"]
+    B -->|webhook| C["Vercel<br/>Build + Deploy"]
+    C --> D["Live URL<br/>your-app.vercel.app"]
+    C --> E["Global CDN<br/>Edge Network"]
 ```
 
 ---

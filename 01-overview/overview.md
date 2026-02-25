@@ -110,13 +110,13 @@ This workshop uses AI tools at every phase:
 
 ```mermaid
 flowchart TD
-    A["IDEATION\nAI generates ideas, refines scope\nChatGPT, Claude"]
-    B["RESEARCH\nAI identifies requirements, components\nChatGPT, Claude"]
-    C["ARCHITECTURE\nAI creates system design, folder structure\nClaude"]
-    D["UI DESIGN\nAI generates layouts, section specs\nV0, ChatGPT, Claude"]
-    E["BUILD\nAI writes component code, pages\nCursor, V0, Bolt, ChatGPT"]
-    F["BACKEND\nAI generates Firebase config, auth logic\nChatGPT, Claude, Cursor"]
-    G["DEPLOY\nManual via Vercel - AI assists with errors\nVercel CLI / Dashboard"]
+    A["IDEATION<br/>AI generates ideas, refines scope<br/>ChatGPT, Claude"]
+    B["RESEARCH<br/>AI identifies requirements, components<br/>ChatGPT, Claude"]
+    C["ARCHITECTURE<br/>AI creates system design, folder structure<br/>Claude"]
+    D["UI DESIGN<br/>AI generates layouts, section specs<br/>V0, ChatGPT, Claude"]
+    E["BUILD<br/>AI writes component code, pages<br/>Cursor, V0, Bolt, ChatGPT"]
+    F["BACKEND<br/>AI generates Firebase config, auth logic<br/>ChatGPT, Claude, Cursor"]
+    G["DEPLOY<br/>Manual via Vercel - AI assists with errors<br/>Vercel CLI / Dashboard"]
 
     A --> B --> C --> D --> E --> F --> G
 ```
