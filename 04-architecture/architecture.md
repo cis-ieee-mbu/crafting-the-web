@@ -96,11 +96,11 @@ flowchart TD
 
     Navbar --> Logo
     Navbar --> NavLinks
-    Navbar --> AuthButton["AuthButton\nSign In / User Menu"]
+    Navbar --> AuthButton["AuthButton<br/>Sign In / User Menu"]
 
-    Pages --> HomePage["HomePage\npage.js - /"]
-    Pages --> AuthPage["AuthPage\n/auth"]
-    Pages --> DashboardPage["DashboardPage\n/dashboard"]
+    Pages --> HomePage["HomePage<br/>page.js - /"]
+    Pages --> AuthPage["AuthPage<br/>/auth"]
+    Pages --> DashboardPage["DashboardPage<br/>/dashboard"]
 
     HomePage --> HeroSection
     HomePage --> FeaturesGrid

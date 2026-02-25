@@ -23,17 +23,17 @@
 ```mermaid
 flowchart TD
     subgraph APP["YOUR NEXT.JS APP"]
-        AF["Auth Forms"] --> AuthLib["src/lib/auth.js\nsignUp, signIn, logOut"]
-        DC["Dashboard\nComponents"] --> FSLib["src/lib/firestore.js\naddItem, getItems, etc."]
-        AuthLib --> FBLib["src/lib/firebase.js\nFirebase SDK init"]
+        AF["Auth Forms"] --> AuthLib["src/lib/auth.js<br/>signUp, signIn, logOut"]
+        DC["Dashboard<br/>Components"] --> FSLib["src/lib/firestore.js<br/>addItem, getItems, etc."]
+        AuthLib --> FBLib["src/lib/firebase.js<br/>Firebase SDK init"]
         FSLib --> FBLib
     end
 
     FBLib -->|HTTPS| FIREBASE
 
     subgraph FIREBASE["FIREBASE - Google Cloud"]
-        AUTH["Authentication\nEmail/Pass, User mgmt, Session"]
-        STORE["Cloud Firestore\nusers collection, tasks collection"]
+        AUTH["Authentication<br/>Email/Pass, User mgmt, Session"]
+        STORE["Cloud Firestore<br/>users collection, tasks collection"]
     end
 ```
 

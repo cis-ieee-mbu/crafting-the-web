@@ -10,6 +10,8 @@
 - [Expected Repository Structure](#-expected-repository-structure)
 - [Quality Criteria](#-quality-criteria)
 - [README Template](#-readme-template)
+- [Practice Tasks for Students](#-practice-tasks-for-students)
+- [What to Learn Next](#-what-to-learn-next)
 - [Final Submission Checklist](#-final-submission-checklist)
 
 ---
@@ -266,7 +268,78 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-## 🎯 Final Submission Checklist
+## 📝 Practice Tasks for Students
+
+After completing the workshop project, extend your skills with these challenges. Each builds on what you already built.
+
+### Beginner Practice
+
+- [ ] **Change the theme** — Pick a new color (e.g., purple instead of blue). Update all button and accent colors in Tailwind classes.
+- [ ] **Add a new field** — Add a "due date" field to tasks. Store it in Firestore, display it in `TaskItem`.
+- [ ] **Add an edit feature** — Allow users to edit a task title. Add an edit button that toggles an inline input.
+- [ ] **Improve empty state** — Customize the "No tasks yet" message. Add an illustration or emoji to make it friendlier.
+- [ ] **Add a loading spinner** — Show a spinner while tasks are being fetched from Firestore.
+
+### Intermediate Practice
+
+- [ ] **Build a new page** — Add a `/profile` page. Show the user's email, display name, and account creation date from Firebase Auth.
+- [ ] **Add Google Sign-In** — Enable Google authentication in Firebase Console and add a "Sign in with Google" button.
+- [ ] **Add real-time updates** — Replace `getDocs` with `onSnapshot` so tasks update automatically when changed in another browser tab.
+- [ ] **Add task categories** — Let users create custom categories instead of hardcoded ones. Store categories as a Firestore subcollection.
+- [ ] **Add search** — Add a search input above the task list that filters tasks by title in real time.
+
+### Advanced Practice
+
+- [ ] **Add dark mode** — Use Tailwind's `dark:` prefix and `localStorage` to persist the user's preference.
+- [ ] **Export tasks** — Add a button to download all tasks as a `.csv` file using JavaScript.
+- [ ] **Add notifications** — Show a toast notification (top-right popup) when a task is added, completed, or deleted.
+- [ ] **Build a completely different app** — Pick a new idea from Phase 2 and build it end to end using this same pipeline.
+
+---
+
+## 🚀 What to Learn Next
+
+You have now built a full-stack web application from scratch. Here is what to explore next, in order of priority:
+
+### Immediate Next Steps
+
+| Topic | Why | Resource |
+|:------|:----|:---------|
+| **TypeScript** | Type safety prevents whole classes of bugs | [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/) |
+| **React Hooks (deep dive)** | `useCallback`, `useMemo`, `useRef` make apps faster | [React Docs — Hooks](https://react.dev/reference/react) |
+| **Git branching** | Professional teams use branches for every feature | [Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials) |
+
+### Frontend Skills
+
+| Topic | Why |
+|:------|:----|
+| **CSS Flexbox & Grid** | Understand the layout model behind Tailwind |
+| **Next.js API Routes** | Add server-side logic without a separate backend |
+| **React Query / TanStack** | Better data fetching with caching and background sync |
+| **Framer Motion** | Add polished animations to React components |
+
+### Backend & Database Skills
+
+| Topic | Why |
+|:------|:----|
+| **Firestore real-time listeners** | `onSnapshot` keeps UI in sync automatically |
+| **Firebase Storage** | Allow users to upload files and images |
+| **Firebase Cloud Functions** | Run server-side logic triggered by events |
+| **SQL basics (PostgreSQL)** | Understand relational databases alongside NoSQL |
+
+### Career & Portfolio
+
+| Action | Why |
+|:-------|:----|
+| **Write a project README** | Employers read READMEs before looking at code |
+| **Add screenshots to GitHub** | Visual proof that the app works |
+| **Deploy 2–3 more projects** | Portfolio breadth matters more than project complexity |
+| **Contribute to open source** | Real-world Git workflow with other developers |
+
+> [!TIP]
+> Pick **one thing** from each category and spend one week on it. Depth beats breadth when learning new skills.
+
+---
 
 Before you consider the project done:
 

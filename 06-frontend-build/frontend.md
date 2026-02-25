@@ -103,7 +103,7 @@ Follow the implementation order from Phase 5. Build one component, verify it ren
 
 ```mermaid
 flowchart TD
-    A["1. Identify next component\nfrom implementation order"] --> B["2. Write a specific prompt"]
+    A["1. Identify next component<br/>from implementation order"] --> B["2. Write a specific prompt"]
     B --> C["3. Generate code using AI"]
     C --> D["4. Paste into correct file"]
     D --> E["5. Import into parent"]

@@ -82,9 +82,9 @@ For each section specify:
 ```mermaid
 flowchart TD
     Navbar["NAVBAR - Fixed top"]
-    Hero["HERO SECTION\nHeadline / Subtitle / CTA"]
-    Features["FEATURES GRID\n3-column card layout"]
-    HowItWorks["HOW IT WORKS\nStep 1, Step 2, Step 3"]
+    Hero["HERO SECTION<br/>Headline / Subtitle / CTA"]
+    Features["FEATURES GRID<br/>3-column card layout"]
+    HowItWorks["HOW IT WORKS<br/>Step 1, Step 2, Step 3"]
     CTA["CTA SECTION"]
     Footer["FOOTER"]
 
