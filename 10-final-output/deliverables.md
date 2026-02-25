@@ -11,6 +11,9 @@
 - [Quality Criteria](#-quality-criteria)
 - [README Template](#-readme-template)
 - [Final Submission Checklist](#-final-submission-checklist)
+- [How to Extend Your Project](#-how-to-extend-your-project)
+- [What to Learn Next](#-what-to-learn-next)
+- [Local Development Quick Reference](#️-local-development-quick-reference)
 
 ---
 
@@ -280,7 +283,96 @@ Before you consider the project done:
 
 ---
 
-> **🎉 Congratulations — you've built and shipped a complete web application!**
+> **Congratulations — you've built and shipped a complete web application!**
+
+---
+
+## 🚀 How to Extend Your Project
+
+Now that you have a working app, here are practical features to make it stronger:
+
+### Beginner Extensions
+
+| Feature | What to Learn | Difficulty |
+|:--------|:-------------|:-----------|
+| Dark mode toggle | Tailwind `dark:` classes, localStorage | Easy |
+| Search / filter bar | `Array.filter()`, controlled inputs | Easy |
+| User profile page | New route, Firestore read/update | Easy |
+| Sorting (by date, priority) | `Array.sort()`, state management | Easy |
+
+### Intermediate Extensions
+
+| Feature | What to Learn | Difficulty |
+|:--------|:-------------|:-----------|
+| Real-time updates | Firestore `onSnapshot` listener | Medium |
+| File/image upload | Firebase Storage, `<input type="file">` | Medium |
+| Email verification | Firebase `sendEmailVerification()` | Medium |
+| Drag-and-drop reorder | `react-beautiful-dnd` or `@dnd-kit` | Medium |
+
+### Advanced Extensions
+
+| Feature | What to Learn | Difficulty |
+|:--------|:-------------|:-----------|
+| Google / GitHub OAuth | Firebase `signInWithPopup`, OAuth providers | Medium-Hard |
+| API routes | Next.js server-side API, `app/api/` | Hard |
+| Admin dashboard | Role-based access, Firestore custom claims | Hard |
+
+> [!TIP]
+> Pick ONE extension at a time. Get it working and committed before starting the next.
+
+---
+
+## 📚 What to Learn Next
+
+### Deepen Your Current Stack
+
+| Topic | Resource |
+|:------|:---------|
+| React fundamentals | [react.dev/learn](https://react.dev/learn) |
+| Next.js App Router | [nextjs.org/docs](https://nextjs.org/docs) |
+| Tailwind CSS | [tailwindcss.com/docs](https://tailwindcss.com/docs) |
+| Firebase | [firebase.google.com/docs](https://firebase.google.com/docs) |
+
+### Expand Your Skills
+
+| Topic | Why It Matters |
+|:------|:--------------|
+| **TypeScript** | Catches bugs before runtime. Most professional React projects use it. |
+| **Git branching** | Work on features without breaking main. Essential for team projects. |
+| **Testing (Jest + RTL)** | Verify code works automatically instead of clicking through manually. |
+| **REST APIs** | Understand how frontends talk to backends beyond Firebase SDKs. |
+| **SQL databases** | Firestore is great for prototyping; many production apps use relational databases. |
+
+### Build More Projects
+
+1. **Portfolio site** — Static Next.js site showcasing your work
+2. **Blog with CMS** — Markdown-based or headless CMS integration
+3. **E-commerce store** — Product listing, cart, Stripe checkout
+4. **Real-time chat** — Firestore real-time listeners or WebSockets
+
+---
+
+## 🛠️ Local Development Quick Reference
+
+```bash
+npm run dev       # Start dev server (http://localhost:3000)
+npm run build     # Production build — catches errors
+npm run start     # Run production build locally
+npm install pkg   # Install a new package
+git add . && git commit -m "feat: description"   # Commit changes
+git push origin main   # Push → auto deploys on Vercel
+```
+
+### Debugging Tips
+
+| Situation | What to Do |
+|:----------|:-----------|
+| White screen, no errors | Check browser console (F12). Usually a missing import. |
+| Console error you don't understand | Copy the **full** error → paste into AI with your code. |
+| Styling not applying | Inspect element (F12). Check `tailwind.config.js` content paths. |
+| Firebase operations fail | Check Network tab (F12). Check Firebase Console rules. |
+| Changes not showing | Hard refresh (`Ctrl+Shift+R`). If still stale, restart dev server. |
+| Build fails | Read error from bottom to top. Last error is usually the root cause. |
 
 ---
 

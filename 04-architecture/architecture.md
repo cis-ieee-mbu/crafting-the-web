@@ -96,11 +96,11 @@ flowchart TD
 
     Navbar --> Logo
     Navbar --> NavLinks
-    Navbar --> AuthButton["AuthButton\nSign In / User Menu"]
+    Navbar --> AuthButton["AuthButton<br/>Sign In / User Menu"]
 
-    Pages --> HomePage["HomePage\npage.js - /"]
-    Pages --> AuthPage["AuthPage\n/auth"]
-    Pages --> DashboardPage["DashboardPage\n/dashboard"]
+    Pages --> HomePage["HomePage<br/>page.js - /"]
+    Pages --> AuthPage["AuthPage<br/>/auth"]
+    Pages --> DashboardPage["DashboardPage<br/>/dashboard"]
 
     HomePage --> HeroSection
     HomePage --> FeaturesGrid
@@ -286,13 +286,14 @@ Include these sections:
 
 ## 📦 Expected Output from This Phase
 
-| Deliverable | Description |
-|:------------|:------------|
-| `ARCHITECTURE.md` | Complete architecture document |
-| Component tree | Visual hierarchy of all components |
-| Folder structure | Ready to scaffold |
-| Data flow diagrams | For each core operation |
-| Route map | All pages and their auth requirements |
+Before moving to Phase 5, confirm you have:
+
+- [ ] Created an `ARCHITECTURE.md` file with all sections listed above
+- [ ] Drawn the component hierarchy tree (which component is inside which)
+- [ ] Written the complete folder structure you will scaffold
+- [ ] Documented every route and its auth requirement
+- [ ] Drawn at least one data flow diagram for your core CRUD operation
+- [ ] Decided on state management approach (Context + useState for most apps)
 
 ---
 

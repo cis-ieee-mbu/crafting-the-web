@@ -35,17 +35,17 @@
 
 ## 🎯 What Is This?
 
-This repository contains the full documentation and workflow guide for the **Crafting the Web** workshop. Students follow a **10-phase pipeline** to build a real, deployed web application — using AI tools at every stage.
+This is your **self-paced guide** to building and deploying a full-stack web application. Each phase gives you the exact steps, prompts, and code to go from zero to a live app.
 
-**You will build:**
+**By the end, you will have:**
 
-- ✅ A fully functional web application
-- ✅ Connected to a real backend (Firebase)
-- ✅ Deployed to a live URL (Vercel)
-- ✅ Using AI to accelerate every step
+- A working web app with authentication and a real database
+- A live URL anyone can visit (deployed on Vercel)
+- Hands-on experience with Next.js, React, Tailwind CSS, and Firebase
+- A portfolio-ready project you built yourself
 
 > [!TIP]
-> New to web development? Start with [Phase 1 — Overview](./01-overview/overview.md) and follow each phase in order. Each phase builds on the previous one.
+> Start with [Phase 1 — Overview](./01-overview/overview.md) and follow each phase in order. Each phase builds on the previous one.
 
 ---
 
@@ -86,14 +86,14 @@ flowchart TB
     end
 
     subgraph FIREBASE["FIREBASE - Google Cloud"]
-        Auth["Authentication\nEmail/Pass"]
-        Firestore["Cloud Firestore\nNoSQL Database"]
+        Auth["Authentication<br/>Email/Pass"]
+        Firestore["Cloud Firestore<br/>NoSQL Database"]
     end
 
     subgraph VERCEL["VERCEL - Deployment"]
         Build["Build Pipeline"]
         CDN["CDN / Edge Network"]
-        URL["Live URL\nyour-app.vercel.app"]
+        URL["Live URL<br/>your-app.vercel.app"]
     end
 
     Pages --> SDK
@@ -174,32 +174,41 @@ Use individual phase docs as reference while building your own project.
 
 ## 📋 Prerequisites
 
-Before starting, make sure you have:
+Before starting, make sure you have these installed and ready:
 
-- ✅ Basic understanding of HTML, CSS, JavaScript
-- ✅ A code editor installed ([VS Code](https://code.visualstudio.com/) or [Cursor](https://cursor.sh/) recommended)
-- ✅ [Node.js 18+](https://nodejs.org/) installed
-- ✅ A [GitHub](https://github.com/) account
-- ✅ A [Google](https://accounts.google.com/) account (for Firebase)
-- ✅ A [Vercel](https://vercel.com/) account (free tier)
+| Requirement | How to Check | Install Link |
+|:------------|:-------------|:-------------|
+| **Node.js 18+** | `node --version` | [nodejs.org](https://nodejs.org/) |
+| **npm 9+** | `npm --version` | Comes with Node.js |
+| **Git** | `git --version` | [git-scm.com](https://git-scm.com/) |
+| **Code Editor** | — | [VS Code](https://code.visualstudio.com/) or [Cursor](https://cursor.sh/) |
+| **GitHub account** | — | [github.com](https://github.com/) |
+| **Google account** | — | [accounts.google.com](https://accounts.google.com/) (for Firebase) |
+| **Vercel account** | — | [vercel.com](https://vercel.com/) (free tier) |
+
+### Quick Verification
+
+Run this in your terminal to confirm your setup:
+
+```bash
+node --version    # Should print v18.x.x or higher
+npm --version     # Should print 9.x.x or higher
+git --version     # Should print git version 2.x.x
+```
 
 > [!IMPORTANT]
-> Verify your Node.js version by running `node --version` in your terminal. You need **v18 or higher**.
+> If `node --version` prints less than v18, [download the latest LTS version](https://nodejs.org/) before continuing.
 
 ---
 
 ## 📄 License
 
-This workshop documentation is open source and available for educational use.
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
 <div align="center">
 
-*Built for the Crafting the Web Workshop*
-
 **[⬆ Back to Top](#-crafting-the-web--ai-assisted-web-development-pipeline)**
 
 </div>
-# crafting-the-web
-# crafting-the-web

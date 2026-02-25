@@ -82,20 +82,13 @@ For each section specify:
 ```mermaid
 flowchart TD
     Navbar["NAVBAR - Fixed top"]
-    Hero["HERO SECTION\nHeadline / Subtitle / CTA"]
-    Features["FEATURES GRID\n3-column card layout"]
-    HowItWorks["HOW IT WORKS\nStep 1, Step 2, Step 3"]
+    Hero["HERO SECTION<br/>Headline / Subtitle / CTA"]
+    Features["FEATURES GRID<br/>3-column card layout"]
+    HowItWorks["HOW IT WORKS<br/>Step 1, Step 2, Step 3"]
     CTA["CTA SECTION"]
     Footer["FOOTER"]
 
     Navbar --> Hero --> Features --> HowItWorks --> CTA --> Footer
-
-    style Navbar fill:#e0f2fe,stroke:#0284c7
-    style Hero fill:#dbeafe,stroke:#2563eb
-    style Features fill:#f3f4f6,stroke:#6b7280
-    style HowItWorks fill:#f3f4f6,stroke:#6b7280
-    style CTA fill:#dbeafe,stroke:#2563eb
-    style Footer fill:#e0f2fe,stroke:#0284c7
 ```
 
 ---
@@ -237,12 +230,13 @@ Include:
 
 ## 📦 Expected Output from This Phase
 
-| Deliverable | Description |
-|:------------|:------------|
-| Component list | Every component per page with purpose and data |
-| Section map | Visual layout of each page |
-| Data model | Collections, fields, types, relationships |
-| Requirements document | Complete checklist of all requirements |
+Before moving to Phase 4, confirm you have:
+
+- [ ] Listed every UI component per page (name, purpose, data, interactions)
+- [ ] Mapped the visual layout of each page (sections from top to bottom)
+- [ ] Defined your data model (collections, fields, types, relationships)
+- [ ] Written a requirements document with functional, non-functional, and auth requirements
+- [ ] Saved a reusable requirements checklist to verify against in Phase 10
 
 ---
 

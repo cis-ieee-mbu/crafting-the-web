@@ -30,7 +30,7 @@ flowchart LR
     Deploy --> Maintain["Maintain"]
 ```
 
-In traditional development, each phase can take weeks. With AI-assisted tooling, we compress this into hours while maintaining quality.
+In traditional development, each phase can take weeks. This pipeline compresses it into hours by using AI tools at every step — but you still need to understand what each phase does and why.
 
 ---
 
@@ -110,13 +110,13 @@ This workshop uses AI tools at every phase:
 
 ```mermaid
 flowchart TD
-    A["IDEATION\nAI generates ideas, refines scope\nChatGPT, Claude"]
-    B["RESEARCH\nAI identifies requirements, components\nChatGPT, Claude"]
-    C["ARCHITECTURE\nAI creates system design, folder structure\nClaude"]
-    D["UI DESIGN\nAI generates layouts, section specs\nV0, ChatGPT, Claude"]
-    E["BUILD\nAI writes component code, pages\nCursor, V0, Bolt, ChatGPT"]
-    F["BACKEND\nAI generates Firebase config, auth logic\nChatGPT, Claude, Cursor"]
-    G["DEPLOY\nManual via Vercel - AI assists with errors\nVercel CLI / Dashboard"]
+    A["IDEATION<br/>AI generates ideas, refines scope<br/>ChatGPT, Claude"]
+    B["RESEARCH<br/>AI identifies requirements, components<br/>ChatGPT, Claude"]
+    C["ARCHITECTURE<br/>AI creates system design, folder structure<br/>Claude"]
+    D["UI DESIGN<br/>AI generates layouts, section specs<br/>V0, ChatGPT, Claude"]
+    E["BUILD<br/>AI writes component code, pages<br/>Cursor, V0, Bolt, ChatGPT"]
+    F["BACKEND<br/>AI generates Firebase config, auth logic<br/>ChatGPT, Claude, Cursor"]
+    G["DEPLOY<br/>Manual via Vercel - AI assists with errors<br/>Vercel CLI / Dashboard"]
 
     A --> B --> C --> D --> E --> F --> G
 ```
@@ -186,12 +186,15 @@ Configuration values (API keys, project IDs) stored outside the code. Never hard
 
 ## 📦 Expected Output from This Phase
 
-| Deliverable | Description |
-|:------------|:------------|
-| Mental model | Understand how frontend, backend, database, and deployment connect |
-| Tech stack knowledge | Know why Next.js, Firebase, Tailwind CSS, and Vercel were chosen |
-| AI pipeline awareness | Understand how AI tools assist at each development phase |
-| Data flow understanding | Trace how a user action flows from UI to database and back |
+After reading this phase, you should be able to answer:
+
+- [ ] What are the 4 layers of a web app? (frontend, backend, database, deployment)
+- [ ] What technology handles each layer in this project?
+- [ ] What does Firebase do? What does Vercel do?
+- [ ] How does data flow from a button click to the database and back?
+- [ ] What is a component? What is an environment variable?
+
+If any of these are unclear, re-read the relevant section above before moving on.
 
 ---
 

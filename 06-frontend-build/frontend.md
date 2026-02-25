@@ -103,7 +103,7 @@ Follow the implementation order from Phase 5. Build one component, verify it ren
 
 ```mermaid
 flowchart TD
-    A["1. Identify next component\nfrom implementation order"] --> B["2. Write a specific prompt"]
+    A["1. Identify next component<br/>from implementation order"] --> B["2. Write a specific prompt"]
     B --> C["3. Generate code using AI"]
     C --> D["4. Paste into correct file"]
     D --> E["5. Import into parent"]
@@ -458,14 +458,24 @@ git commit -m "feat: add dashboard with mock task management"
 
 ## 📦 Expected Output from This Phase
 
-| Deliverable | Status |
-|:------------|:-------|
-| Project scaffolded | Next.js + Tailwind running |
-| All pages rendering | `/`, `/auth`, `/dashboard` |
-| All components built | Per architecture doc |
-| Responsive design | Mobile + Desktop |
-| Navigation working | Links between pages |
-| Core feature working | With mock/local data |
+Before moving to Phase 7, verify in your browser:
+
+- [ ] `npm run dev` starts without errors
+- [ ] Landing page (`/`) renders with all sections (hero, features, CTA, footer)
+- [ ] Auth page (`/auth`) renders with login/signup toggle and forms
+- [ ] Dashboard page (`/dashboard`) renders with mock task data
+- [ ] Navbar appears on all pages with working navigation links
+- [ ] Layout is responsive (test at 360px and 1280px widths in DevTools)
+- [ ] You have at least 4 git commits (one per build round)
+
+### Common Issues at This Stage
+
+| Problem | Fix |
+|:--------|:----|
+| Page shows blank white screen | Check browser console for errors. Usually a missing import. |
+| `Module not found` error | Check the import path — typo in filename or folder? |
+| Styling looks wrong | Make sure `globals.css` has the 3 Tailwind directives and is imported in `layout.js` |
+| Component doesn't render | Did you add `"use client"` if it uses `useState` or `onClick`? |
 
 ---
 

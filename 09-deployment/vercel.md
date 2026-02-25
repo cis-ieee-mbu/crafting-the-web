@@ -243,22 +243,35 @@ git push origin feature/new-section
 ```mermaid
 flowchart LR
     A["Local Code"] -->|git push| B["GitHub Repo"]
-    B -->|webhook| C["Vercel\nBuild + Deploy"]
-    C --> D["Live URL\nyour-app.vercel.app"]
-    C --> E["Global CDN\nEdge Network"]
+    B -->|webhook| C["Vercel<br/>Build + Deploy"]
+    C --> D["Live URL<br/>your-app.vercel.app"]
+    C --> E["Global CDN<br/>Edge Network"]
 ```
 
 ---
 
 ## 📦 Expected Output from This Phase
 
-| Deliverable | Description |
-|:------------|:------------|
-| Live URL | `https://your-app.vercel.app` |
-| GitHub integration | Auto-deploy on push to main |
-| Environment variables | Configured in Vercel dashboard |
-| Firebase domain | Added to authorized domains |
-| All features verified | Working in production |
+Before moving to Phase 10, verify:
+
+- [ ] `npm run build` succeeds locally with zero errors
+- [ ] Code is pushed to a GitHub repository
+- [ ] Vercel project is connected to the GitHub repo
+- [ ] All 6 environment variables are set in Vercel dashboard
+- [ ] Your Vercel domain is added to Firebase Authorized Domains
+- [ ] Live URL loads (e.g., `https://your-app.vercel.app`)
+- [ ] Auth works on the live site (sign up, sign in, sign out)
+- [ ] CRUD operations work on the live site
+- [ ] No console errors in production
+
+### If Something Breaks After Deploy
+
+| Symptom | Likely Cause |
+|:--------|:-------------|
+| Blank page on live site | Missing environment variables in Vercel. Redeploy after adding them. |
+| Auth fails on live site | Vercel domain not added to Firebase Authorized Domains (Step 4). |
+| Build fails on Vercel | Run `npm run build` locally first — fix errors there before pushing. |
+| Data not loading | Check Firestore security rules. Test mode may have expired. |
 
 ---
 

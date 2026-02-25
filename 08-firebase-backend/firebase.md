@@ -23,17 +23,17 @@
 ```mermaid
 flowchart TD
     subgraph APP["YOUR NEXT.JS APP"]
-        AF["Auth Forms"] --> AuthLib["src/lib/auth.js\nsignUp, signIn, logOut"]
-        DC["Dashboard\nComponents"] --> FSLib["src/lib/firestore.js\naddItem, getItems, etc."]
-        AuthLib --> FBLib["src/lib/firebase.js\nFirebase SDK init"]
+        AF["Auth Forms"] --> AuthLib["src/lib/auth.js<br/>signUp, signIn, logOut"]
+        DC["Dashboard<br/>Components"] --> FSLib["src/lib/firestore.js<br/>addItem, getItems, etc."]
+        AuthLib --> FBLib["src/lib/firebase.js<br/>Firebase SDK init"]
         FSLib --> FBLib
     end
 
     FBLib -->|HTTPS| FIREBASE
 
     subgraph FIREBASE["FIREBASE - Google Cloud"]
-        AUTH["Authentication\nEmail/Pass, User mgmt, Session"]
-        STORE["Cloud Firestore\nusers collection, tasks collection"]
+        AUTH["Authentication<br/>Email/Pass, User mgmt, Session"]
+        STORE["Cloud Firestore<br/>users collection, tasks collection"]
     end
 ```
 
@@ -573,14 +573,20 @@ You can create it here: https://console.firebase.google.com/...
 
 ## 📦 Expected Output from This Phase
 
-| Deliverable | Status |
-|:------------|:-------|
-| Firebase project created | Console configured |
-| Authentication working | Sign up + Sign in + Sign out |
-| Auth state global | AuthContext wraps app |
-| Firestore CRUD working | Create, Read, Update, Delete tasks |
-| Protected routes | Dashboard redirects if not logged in |
-| Security rules deployed | Users can only access own data |
+Before moving to Phase 9, verify each item works:
+
+- [ ] Firebase project exists in the [Firebase Console](https://console.firebase.google.com)
+- [ ] Email/Password auth is enabled
+- [ ] `.env.local` has all 6 Firebase config values
+- [ ] Can create a new account (check Firebase Console → Authentication → Users)
+- [ ] Can sign in with existing account
+- [ ] Can sign out
+- [ ] Dashboard redirects to `/auth` when not logged in
+- [ ] Can add a new item → it appears in the list
+- [ ] Can toggle/complete an item → UI updates
+- [ ] Can delete an item → it disappears
+- [ ] Data persists after refreshing the page
+- [ ] Security rules are published (not still in test mode)
 
 ---
 
@@ -595,6 +601,17 @@ You can create it here: https://console.firebase.google.com/...
 - [ ] Can delete a task → removes from list
 - [ ] Tasks persist after page refresh
 - [ ] Tasks are isolated per user (User A can't see User B's tasks)
+
+### Common Firebase Issues
+
+| Error / Symptom | Cause | Fix |
+|:----------------|:------|:----|
+| `FirebaseError: Missing or insufficient permissions` | Security rules blocking the request | Check rules in Firebase Console. Make sure the `userId` field matches `request.auth.uid`. |
+| `auth/configuration-not-found` | Firebase config values are wrong or missing | Double-check every value in `.env.local` against Firebase Console → Project Settings. |
+| App works but data disappears on refresh | Not saving to Firestore — still using local state | Make sure dashboard calls `getUserTasks()` in `useEffect`, not just local `useState`. |
+| `Cannot read properties of null (reading 'uid')` | Trying to access `user.uid` before auth loads | Add a loading check: `if (authLoading || !user) return null;` |
+| Auth works but Firestore writes fail | Firestore not enabled in Firebase Console | Go to Firebase Console → Firestore Database → Create Database. |
+| `The query requires an index` | Composite index needed for `where` + `orderBy` | Click the link in the error message — it takes you directly to create the index. |
 
 ---
 

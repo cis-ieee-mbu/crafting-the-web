@@ -33,11 +33,11 @@
 flowchart LR
     A["What do you need?"]
     A --> B["Full component"] --> B1["V0 or Cursor"]
-    A --> C["Debug an error"] --> C1["Claude or ChatGPT\npaste full error"]
+    A --> C["Debug an error"] --> C1["Claude or ChatGPT<br/>paste full error"]
     A --> D["Architecture advice"] --> D1["Claude"]
     A --> E["Quick code snippet"] --> E1["ChatGPT or Cursor inline"]
     A --> F["App scaffold"] --> F1["Bolt"]
-    A --> G["Refactor existing code"] --> G1["Cursor\nhas file context"]
+    A --> G["Refactor existing code"] --> G1["Cursor<br/>has file context"]
 ```
 
 ---
@@ -125,11 +125,11 @@ Complete working component with all imports.
 
 ```mermaid
 flowchart TD
-    A["1. ERROR OCCURS\nRead the error message completely.\nDo not panic."]
-    A --> B["2. IDENTIFY THE TYPE\nSyntax, Runtime, Build\nLogic, Styling"]
-    B --> C["3. GATHER CONTEXT\nFull error message, File path\nLine number, What changed\nExpected vs actual"]
-    C --> D["4. ASK AI\nPaste: error + context +\nrelevant code"]
-    D --> E["5. APPLY FIX\nApply suggested fix\nTest in browser"]
+    A["1. ERROR OCCURS<br/>Read the error message completely.<br/>Do not panic."]
+    A --> B["2. IDENTIFY THE TYPE<br/>Syntax, Runtime, Build<br/>Logic, Styling"]
+    B --> C["3. GATHER CONTEXT<br/>Full error message, File path<br/>Line number, What changed<br/>Expected vs actual"]
+    C --> D["4. ASK AI<br/>Paste: error + context +<br/>relevant code"]
+    D --> E["5. APPLY FIX<br/>Apply suggested fix<br/>Test in browser"]
     E --> F{Fixed?}
     F -- Yes --> G["Done"]
     F -- No --> C
@@ -290,14 +290,16 @@ flowchart TD
 
 ## 📦 Expected Output from This Phase
 
-After applying these practices, you should be able to:
+This phase is a **reference guide**, not a step-to-complete. After reading it, you should be able to:
 
-| Skill | Target |
-|:------|:-------|
-| Generate any component | Under 5 minutes |
-| Debug errors | Under 2 minutes |
-| Improve existing components | Systematically |
-| Maintain code quality | Consistent across project |
+- [ ] Write a prompt that generates a working component on the first try
+- [ ] Debug any error in under 2 minutes using the debugging workflow
+- [ ] Improve an existing component (add loading states, error handling, accessibility)
+- [ ] Refactor messy code without changing functionality
+- [ ] Know when to use which AI tool (Cursor for in-editor, Claude for architecture, V0 for UI)
+
+> [!TIP]
+> Bookmark this page. Come back to it whenever you hit a wall during Phase 6 or Phase 8.
 
 ---
 

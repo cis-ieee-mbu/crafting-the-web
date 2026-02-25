@@ -304,7 +304,7 @@ flowchart TD
     A["1. Read the FULL error message"] --> B["2. Check this document"]
     B --> C{Found a match?}
     C -- Yes --> D["Apply the fix"]
-    C -- No --> E["3. Paste into AI with:\nComplete error message\nFile path\nRelevant code\nWhat you were doing"]
+    C -- No --> E["3. Paste into AI with:<br/>Complete error message<br/>File path<br/>Relevant code<br/>What you were doing"]
     E --> D
     D --> F["4. Test in browser"]
     F --> G{Fixed?}

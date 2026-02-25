@@ -1,2 +1,18 @@
-# Source concatenation file (not part of the documentation)
+# Source concatenation file
 st.md
+
+# Dependencies
+node_modules/
+
+# Build output
+.next/
+out/
+
+# Environment variables
+.env
+.env.local
+.env*.local
+
+# System files
+.DS_Store
+Thumbs.db

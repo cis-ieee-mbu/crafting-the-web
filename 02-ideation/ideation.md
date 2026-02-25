@@ -101,10 +101,6 @@ flowchart TD
             end
         end
     end
-
-    style MVP fill:#dbeafe,stroke:#2563eb,stroke-width:2px
-    style NICE fill:#f3f4f6,stroke:#9ca3af
-    style FULL fill:#f9fafb,stroke:#d1d5db
 ```
 
 > [!TIP]
@@ -227,14 +223,17 @@ TaskFlow helps students organize tasks by category and priority in under 10 seco
 
 ## 📦 Expected Output from This Phase
 
-| Deliverable | Format |
-|:------------|:-------|
-| Project Brief | Markdown document |
-| Clear problem statement | 2–3 sentences |
-| Defined target user | Persona description |
-| MVP feature list | 5–7 bulleted items |
-| Out-of-scope list | Bulleted items |
-| Tech stack decision | Table or list |
+Before moving to Phase 3, confirm you have:
+
+- [ ] Chosen one specific app idea
+- [ ] Written a clear problem statement (2–3 sentences)
+- [ ] Defined your target user (who, behavior, pain point)
+- [ ] Listed 5–7 MVP features (each describes a specific user action)
+- [ ] Listed out-of-scope features
+- [ ] Saved the project brief as a markdown document
+
+> [!NOTE]
+> If your feature list has more than 7 items, you're building too much. Cut until you can realistically finish in 2 days.
 
 ---
 

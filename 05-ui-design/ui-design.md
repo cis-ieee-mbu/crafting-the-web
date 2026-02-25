@@ -125,18 +125,12 @@ Document every section with exact layout details.
 ```mermaid
 flowchart TD
     nav["NAVBAR"]
-    stats["STATS BAR\nTotal: 12 / Active: 8 / Done: 4"]
-    form["TASK FORM\nTitle, Category, Priority, Add Task"]
-    filter["FILTER BAR\nAll / Work / Personal / Urgent"]
-    list["TASK LIST\nBuy groceries - Personal - Low\nFinish report - Work - High\nSubmit homework - School - Med"]
+    stats["STATS BAR<br/>Total: 12 / Active: 8 / Done: 4"]
+    form["TASK FORM<br/>Title, Category, Priority, Add Task"]
+    filter["FILTER BAR<br/>All / Work / Personal / Urgent"]
+    list["TASK LIST<br/>Buy groceries - Personal - Low<br/>Finish report - Work - High<br/>Submit homework - School - Med"]
 
     nav --> stats --> form --> filter --> list
-
-    style nav fill:#e0f2fe,stroke:#0284c7
-    style stats fill:#f0fdf4,stroke:#16a34a
-    style form fill:#dbeafe,stroke:#2563eb
-    style filter fill:#f3f4f6,stroke:#6b7280
-    style list fill:#fafafa,stroke:#d1d5db
 ```
 
 ---
@@ -149,11 +143,11 @@ Define what draws the user's eye first, second, and third on each page.
 
 ```mermaid
 flowchart TD
-    A["1. Hero headline\nlargest text, highest contrast"]
-    B["2. CTA buttons\nbright color, prominent position"]
-    C["3. Feature cards\nsupporting information"]
-    D["4. Navigation\nalways accessible but not dominant"]
-    E["5. Footer\nlowest priority, reference only"]
+    A["1. Hero headline<br/>largest text, highest contrast"]
+    B["2. CTA buttons<br/>bright color, prominent position"]
+    C["3. Feature cards<br/>supporting information"]
+    D["4. Navigation<br/>always accessible but not dominant"]
+    E["5. Footer<br/>lowest priority, reference only"]
 
     A --> B --> C --> D --> E
 ```
@@ -162,10 +156,10 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A["1. Task list\nthe core feature, most screen space"]
-    B["2. Add task form\nprimary action"]
-    C["3. Stats bar\ncontextual overview"]
-    D["4. Filter bar\nsecondary controls"]
+    A["1. Task list<br/>the core feature, most screen space"]
+    B["2. Add task form<br/>primary action"]
+    C["3. Stats bar<br/>contextual overview"]
+    D["4. Filter bar<br/>secondary controls"]
 
     A --> B --> C --> D
 ```
@@ -269,13 +263,13 @@ Define consistent values across your application:
 
 ## 📦 Expected Output from This Phase
 
-| Deliverable | Description |
-|:------------|:------------|
-| Section specs | Detailed layout specs for every section |
-| Page wireframes | Text-based layout diagrams |
-| Visual hierarchy | Priority order of elements per page |
-| Implementation order | Numbered build sequence |
-| Design tokens | Colors, typography, spacing reference |
+Before moving to Phase 6, confirm you have:
+
+- [ ] Written detailed layout specs for every section on every page
+- [ ] Created text-based wireframes showing section order and sizing
+- [ ] Defined visual hierarchy (what the user sees first, second, third)
+- [ ] Numbered your implementation order (which components to build first)
+- [ ] Documented design tokens (colors, font sizes, spacing) for consistency
 
 ---
 
